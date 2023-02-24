@@ -1,0 +1,125 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#F6F6F6;
+  .card {
+    background-color: #FFFFFF;
+    .card-head {
+        border-bottom: 0.1rem solid #EBEBEB;
+        padding: 1rem;
+      .head-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .content {
+          display: flex;
+          align-items: baseline;
+          h3{
+            padding: 0 0.4rem 0.1rem 0;
+            border-right: 0.2rem solid #000000;
+            color: #000000;
+            font-size: 1.4rem;
+          }
+          h4{
+            padding: 0 0 0.1rem 0.4rem;
+            font-weight: 400;
+          }
+        }
+        .icon{
+            padding: 0.4rem;
+            font-size: 1.5rem;
+            background-color: #F6F6F6;
+            border-radius: 0.4rem;
+        }
+      }
+    }
+    .card-content {
+        border: 1px solid #EBEBEB;
+        margin:1rem;
+        border-radius: 0.4rem;
+      .content-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #F6F6F6;
+        h3{
+            font-size: 1.4rem;
+        }
+        h5{
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #667677;
+        }
+      }
+      .content-body {
+        h3{
+            font-size: 1.3rem;
+            padding: 2rem 0 0 2rem;
+        }
+        .address {
+          display: flex;
+          gap: 1.5rem;
+          flex-direction: column;
+          padding: 2rem 2rem 12rem;
+          .inputs {
+            display: flex;
+            gap: 1.5rem;
+            .input-1,
+            .input-2,
+            .input-3,
+            .input-4,
+            .input-5,
+            .input-6 {
+              position: relative;
+              .input {
+                padding: 0 0 0 2rem;
+                width: 25rem;
+                height: 3.5rem;
+                background-color: #ffffff;
+                border: 0.1rem solid #ebebeb;
+                border-radius: 0.4rem;
+              }
+              ::placeholder {
+                color: #a7a7a7;
+                font-size: 1.2rem;
+              }
+              label {
+                position: absolute;
+                color: #515151;
+                font-size: 1.2rem;
+                padding: 0 0.5rem;
+                background-color: #ffffff;
+                top: -0.7rem;
+                left: 1.5rem;
+              }
+            }
+          }
+        }
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 2rem 2rem;
+          .back {
+            background-color: #f6f6f6;
+            color: #a7a7a7;
+            border: 0.1rem solid #ebebeb;
+            padding: 1.1rem 2.6rem;
+            font-size: 1.2rem;
+            border-radius: 0.3rem;
+          }
+          .save {
+            color: #ffffff;
+            background-color: #24c8c9;
+            padding: 1.2rem 2.2rem;
+            font-size: 1.2rem;
+            border-radius: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
