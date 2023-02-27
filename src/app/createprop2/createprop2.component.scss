@@ -1,0 +1,75 @@
+
+main{
+    background-color: #3131311A;
+    height: 100vh;
+    .right{
+        width: 95vw;
+        height: 100vh;
+        float: right;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 2rem #7454831A;
+        border-radius: 1rem 0  1rem;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding:1.5rem 2.5rem;
+            border-bottom: 0.1rem solid #EAEAEA;
+            h2{
+                color: #08313A;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            .icon{
+                font-size: 2.2rem;
+                font-weight: 800;
+                padding: 0.4rem;
+                background-color: #F9F7F9;
+                border: 0.2rem solid #E2E3EA;
+                border-radius: 0.6rem;
+                box-shadow: 0 0.5rem 1.5rem #7454831A;
+                cursor: pointer;
+            }
+        }
+        .content{
+            background-color: #FFFFFF;
+            .sidenav{
+                display: flex;
+                padding: 3rem 0 0 3rem;
+                background-color: #F5F5F5;
+                width: 26rem;
+                height: 85vh;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3.5rem;
+                    list-style: none;
+                    padding: 0 0 0 3rem;
+                    border-left: 0.1rem solid #B4BCC7;
+                    height: 26rem;
+                    position: relative;
+                    li{
+                        h5{
+                            position: absolute;
+                            left: -0.8rem;
+                            background-color: #FFFFFF;
+                            border: 0.1rem solid #24C8C9;
+                            border-radius: 50%;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #8C939B;
+                        }
+                        h3{
+                            color: #8C939B;
+                        }
+                    }
+                }
+            }
+        }
+        .body{
+
+        }
+    }
+}
