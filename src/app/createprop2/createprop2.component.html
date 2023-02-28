@@ -1,43 +1,133 @@
 <main>
-    <section class="right">
-        <aside class="header">
-            <h2>Create New Property</h2>
-            <span class="material-icons-round icon"> close </span>
-        </aside>
-        <aside class="content">
-            <span class="sidenav">
-                <ul>
-                    <li>
-                        <h5>1</h5>
-                        <h3>General Informations</h3>
-                    </li>
-                    <li>
-                        <h5>2</h5>
-                        <h3>Property Informations</h3>
-                    </li>
-                    <li>
-                        <h5>3</h5>
-                        <h3>Additional Informations</h3>
-                    </li>
-                    <li>
-                        <h5>4</h5>
-                        <h3>Association Informations</h3>
-                    </li>
-                    <li>
-                        <h5>5</h5>
-                        <h3>Pricing And Sale Info</h3>
-                    </li>
-                    <li>
-                        <h5>6</h5>
-                        <h3>Publish Information</h3>
-                    </li>
-                </ul>
+  <section class="right">
+    <aside class="header">
+      <h2>Create New Property</h2>
+      <span class="material-icons-round icon"> close </span>
+    </aside>
+    <aside class="content">
+      <span class="sidenav">
+        <ul>
+          <li>
+            <h3>General Informations</h3>
+          </li>
+          <li>
+            <h3>Property Informations</h3>
+          </li>
+          <li>
+            <h3>Additional Informations</h3>
+          </li>
+          <li>
+            <h3>Association Informations</h3>
+          </li>
+          <li>
+            <h3>Pricing And Sale Info</h3>
+          </li>
+          <li>
+            <h3>Publish Information</h3>
+          </li>
+        </ul>
+      </span>
+      <span class="body">
+        <span class="inputs">
+          <span class="basics">
+            <h2>Basic Details</h2>
+            <span class="input">
+              <input type="text" class="input" placeholder="Property Name" />
             </span>
-            <span class="body">
-    
+            <span class="input">
+              <input
+                type="text"
+                class="input"
+                placeholder="Single Family-Detached"
+              />
             </span>
-
-        </aside>
-
-    </section>
+            <span class="input">
+              <input type="text" class="input" placeholder="Beds/Baths" />
+            </span>
+            <span class="input">
+              <input type="text" class="input" placeholder="Bedrooms Plus" />
+            </span>
+            <span class="input">
+              <input type="text" class="input" placeholder="Approx SqFt" />
+            </span>
+            <span class="input">
+              <input type="text" class="input" placeholder="Price/SqFt" />
+            </span>
+            <span class="input">
+              <input type="text" class="input" placeholder="YearBuilt" />
+            </span>
+            <span class="input">
+              <input type="text" class="input" placeholder="Pool" />
+            </span>
+          </span>
+          <span class="uploads">
+            <span class="upload-contents">
+              <span class="photo">
+                <h3>Upload Photo</h3>
+                <p>
+                  Drag and drop to reorder. Click on a photo to add a caption or
+                  delete a photo.
+                </p>
+                <span class="preview">
+                  <img
+                    id="preview-img"
+                    src="../../assets/Images/image.png"
+                    alt=""
+                  />
+                  <p>Drag & drop photos here to upload or</p>
+                  <label for="file-upload">Upload Photos</label>
+                  <input
+                    type="file"
+                    id="file-upload"
+                    accept="image/*"
+                    onchange="previewImage(event);"
+                  />
+                </span>
+              </span>
+              <span class="view">
+                <h3>Upload 3D view</h3>
+                <p>
+                  Drag and drop to reorder. Click on a photo to add a caption or
+                  delete a photo.
+                </p>
+                <span class="preview">
+                    <img
+                    id="preview-img"
+                    src="../../assets/Images/image.png"
+                    alt=""
+                  />
+                  <p>Drag & drop photos here to upload or</p>
+                  <label for="file-upload">Open My 3D Home</label>
+                  <input
+                    type="file"
+                    id="file-upload"
+                    accept="image/*"
+                    onchange="previewImage(event);"
+                  />
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span class="buttons">
+          <span class="pages">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul> 
+          </span>
+          <span class="page-dir">
+            <button class="previous">
+              <span class="material-icons-outlined"> arrow_back </span>Previous
+            </button>
+            <button class="next">
+              Next<span class="material-icons-outlined"> arrow_forward </span>
+            </button>
+          </span>
+        </span>
+      </span>
+    </aside>
+  </section>
 </main>

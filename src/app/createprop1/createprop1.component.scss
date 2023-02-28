@@ -2,7 +2,7 @@ main {
     background-color: #3131311a;
     height: 100vh;
     .right {
-      width: 95vw;
+      width: 93vw;
       height: 100vh;
       float: right;
       background-color: #ffffff;
@@ -93,14 +93,15 @@ main {
               label {
                 width: 14rem;
                 height: 14rem;
-                border: 1px solid #f2f1f3;
-                border-radius: 4px;
+                border: 0.1rem solid #f2f1f3;
+                border-radius:0.4rem;
                 background-color: #f6f6f6;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
+                cursor: pointer;
                 span {
                   font-size: 3.5rem;
                   color: #8c939b;
@@ -148,17 +149,39 @@ main {
               }
               &:hover {
                 box-shadow: 0px 0px 20px #24c8c94d;
-                border: 1px solid #24c8c9;
-                border-radius: 4px;
+                border:0.1rem solid #24c8c9;
+                border-radius:0.4rem;
                 background-color: #f6f6f6;
+                transition: .2s ease;
               }
             }
           }
         }
         .buttons-2 {
           height: 20vh;
-          .pages{
-              color: white;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+          .pages {
+            ul {
+              list-style: none;
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              li {
+                width: 0.7rem;
+                height: 0.7rem;
+                background-color: #b4bcc7;
+                border-radius:0.2rem;
+              }
+              li:first-child {
+                width: 1rem;
+                height: 1rem;
+                box-shadow: 0px 0px 20px #7454831a;
+                border: 0.1rem solid #3131311a;
+              }
+            }
           }
           .page-dir {
             display: flex;
