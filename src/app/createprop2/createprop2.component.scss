@@ -75,6 +75,7 @@ main {
         flex-direction: column;
         .inputs {
           display: flex;
+          gap: 1.5rem;
           .basics {
             display: flex;
             flex-direction: column;
